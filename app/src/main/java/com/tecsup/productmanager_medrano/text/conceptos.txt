@@ -1,0 +1,24 @@
+MVVM
+
+Es una forma de organizar una app separando la interfaz de la lógica.
+La pantalla solo muestra datos y el ViewModel se encarga de procesarlos.
+
+Firebase Auth
+
+Permite registrar e iniciar sesión con usuarios usando correo y contraseña.
+Sirve para identificar a cada usuario y que solo vea su propia información.
+
+Firestore
+
+Es una base de datos en la nube que guarda información en colecciones y documentos.
+No necesita tablas y se actualiza en tiempo real cada vez que hacemos cambios.
+
+Jetpack Compose
+
+Es una forma moderna de crear pantallas en Android usando funciones en vez de XML.
+La UI se actualiza sola cuando el estado cambia, haciendo el código más simple.
+
+CRUD
+
+Crear, leer, actualizar y eliminar datos.
+En este proyecto se usa para manejar productos: agregarlos, mostrarlos, editarlos y borrarlos.
