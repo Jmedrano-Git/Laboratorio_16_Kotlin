@@ -50,8 +50,13 @@ fun AppNavHost(
             ProductListScreen(
                 viewModel = listViewModel,
                 irAFormulario = { product ->
-                    formViewModel.cargarProducto(product as Product?)
+                    formViewModel.cargarProducto(product)
                     navController.navigate(AppRoutes.PRODUCT_FORM)
+                },
+                cerrarSesion = {
+                    navController.navigate(AppRoutes.LOGIN) {
+                        popUpTo(AppRoutes.LOGIN) { inclusive = true }
+                    }
                 }
             )
         }

@@ -61,4 +61,9 @@ class ProductListViewModel(
             // El listener de Firestore actualiza la lista automáticamente
         }
     }
+
+    fun cerrarSesion(onCerrarSesion: () -> Unit) {
+        authRepository.cerrarSesion()
+        onCerrarSesion()
+    }
 }

@@ -18,7 +18,8 @@ import com.tecsup.productmanager_medrano.data.model.Product
 @Composable
 fun ProductListScreen(
     viewModel: ProductListViewModel,
-    irAFormulario: (Product?) -> Unit
+    irAFormulario: (Product?) -> Unit,
+    cerrarSesion: () -> Unit
 ) {
     val estado = viewModel.estado.collectAsState().value
 
@@ -42,6 +43,10 @@ fun ProductListScreen(
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold
             )
+
+            TextButton(onClick = { viewModel.cerrarSesion(cerrarSesion) }) {
+                Text("Cerrar sesión")
+            }
 
             Spacer(Modifier.height(10.dp))
 
