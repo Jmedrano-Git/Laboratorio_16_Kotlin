@@ -59,7 +59,7 @@ class ProductRepository(
             awaitClose { listener.remove() }
         }
 
-    suspend fun agregarProducto(producto: Product): ResultState<Unit> {
+    suspend fun agregarProducto(producto: com.tecsup.productmanager_medrano.data.model.Product): ResultState<Unit> {
         return try {
             collection.add(producto).await()
             ResultState.Success(Unit)
@@ -68,7 +68,7 @@ class ProductRepository(
         }
     }
 
-    suspend fun actualizarProducto(producto: Product): ResultState<Unit> {
+    suspend fun actualizarProducto(producto: com.tecsup.productmanager_medrano.data.model.Product): ResultState<Unit> {
         return try {
             collection.document(producto.id).set(producto).await()
             ResultState.Success(Unit)
