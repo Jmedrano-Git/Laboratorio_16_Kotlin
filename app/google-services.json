@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582261241614",
+    "project_id": "productmanager-d6d9a",
+    "storage_bucket": "productmanager-d6d9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582261241614:android:5c900e844902c50625095f",
+        "android_client_info": {
+          "package_name": "com.tecsup.productmanager_medrano"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDKmaE9phgXpQz4UUvbzIsK88bX5ZtD5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
