@@ -7,5 +7,5 @@ data class Producto(
     val precio: Double = 0.0,
     val stock: Int = 0,
     val urlImagen: String = "",
-    val idUsuario: String = "" 
+    val idUsuario: String = ""
 )
