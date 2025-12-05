@@ -39,12 +39,16 @@ class ProductListViewModel(
                     when (resultado) {
                         is ResultState.Loading ->
                             _estado.value = _estado.value.copy(cargando = true)
+
                         is ResultState.Success ->
-                            _estado.value = ProductListState(productos = resultado.datos)
+                            _estado.value = ProductListState(
+                                productos = resultado.data
+                            )
+
                         is ResultState.Error ->
                             _estado.value = _estado.value.copy(
                                 cargando = false,
-                                mensajeError = resultado.mensaje
+                                mensajeError = resultado.message
                             )
                     }
                 }
@@ -54,7 +58,7 @@ class ProductListViewModel(
     fun eliminarProducto(idProducto: String) {
         viewModelScope.launch {
             productRepository.eliminarProducto(idProducto)
-            // el listener de Firestore actualiza la lista solo
+            // El listener de Firestore actualiza la lista automáticamente
         }
     }
 }

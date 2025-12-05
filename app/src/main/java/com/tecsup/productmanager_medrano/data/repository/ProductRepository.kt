@@ -2,8 +2,8 @@ package com.tecsup.productmanager_medrano.data.repository
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
-import com.tecsup.productmanager_medrano.core.utils.Product
 import com.tecsup.productmanager_medrano.core.utils.ResultState
+import com.tecsup.productmanager_medrano.data.model.Product
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.tasks.await

@@ -66,7 +66,7 @@ class RegisterViewModel(
                 is ResultState.Error -> {
                     _estado.value = _estado.value.copy(
                         cargando = false,
-                        mensajeError = resultado.mensaje
+                        mensajeError = resultado.message
                     )
                 }
                 ResultState.Loading -> Unit
